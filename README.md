@@ -1,5 +1,5 @@
 # UP902463_FinalYear
-My Unreal project for the FInal year Project Module. 
+My Unreal project for the Final Year Project Module. 
 
 There are two separate levels, one written in C++ and one written in blueprints. With the two levels, the performance will be tested to see how well the game would run while using each method. After discovering the results, there will be a final result to see if one method is better than the other or if it is necessary to use both techniques simultaneously. 
 
