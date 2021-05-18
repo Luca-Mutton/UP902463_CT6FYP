@@ -12,6 +12,11 @@ W - Move Up
 A - Move Left
 S - Move Down
 D - Move Right
+1 - Use Healing ability
+
+//testing purposes for healing ability
+K- Take damage
+
 
 Developed with Unreal Engine 4
 Version 4.23
