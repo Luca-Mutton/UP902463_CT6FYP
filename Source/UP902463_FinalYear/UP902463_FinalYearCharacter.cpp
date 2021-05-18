@@ -91,12 +91,16 @@ void AUP902463_FinalYearCharacter::ResetAbility1()
 	GetWorld()->GetTimerManager().SetTimer(ability1TimerHandle, this, &AUP902463_FinalYearCharacter::AbilityCDCompleted, abilityCDTime, false);
 }
 
+
+//cooldown is finished and ability usage is reset
 void AUP902463_FinalYearCharacter::AbilityCDCompleted()
 {
 	usedAbility1 = false;
 }
 #pragma endregion
 
+
+//gain experience function
 void AUP902463_FinalYearCharacter::GainExperience(float _EXPAmount)
 {
 	experiencePoints += _EXPAmount;
