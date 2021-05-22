@@ -13,10 +13,13 @@ A - Move Left
 S - Move Down
 D - Move Right
 1 - Use Healing ability
+Left Click - Swing Sword
 
 //testing purposes for healing ability
 K- Take damage
 
+Profiling stats can be found within:
+UP902463_FinalYear>Saved>Profiling>UnrealStats>CollectedResults
 
 Developed with Unreal Engine 4
 Version 4.23
