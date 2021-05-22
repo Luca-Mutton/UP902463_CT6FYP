@@ -206,6 +206,7 @@ void AUP902463_FinalYearCharacter::Heal(float _healAmount)
 	}
 }
 
+//player respawns in specified location
 void AUP902463_FinalYearCharacter::Die()
 {
 	Respawn();
@@ -213,7 +214,7 @@ void AUP902463_FinalYearCharacter::Die()
 
 void AUP902463_FinalYearCharacter::Respawn()
 {
-	PlayerHP = 1.0f;
+	PlayerHP = 1.0f; //resets health to full
 	SetActorLocation(respawnLocation);
 }
 #pragma endregion

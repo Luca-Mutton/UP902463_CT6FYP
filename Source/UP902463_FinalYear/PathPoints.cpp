@@ -35,6 +35,7 @@ void APathPoints::Tick(float DeltaTime)
 //the path patrol for Ai and how it moves to different locations.
 void APathPoints::OnPlayerEnter(UPrimitiveComponent* OverlapComponent, AActor* OtherActor, UPrimitiveComponent* OtherComponent, int32 OtherBodyIndex, bool bfromSweep, const FHitResult& SweepResult)
 {
+	//gets enemy AI class
 	AEnemyAI* Enemy = nullptr;
 
 	if (OtherActor != nullptr)
@@ -42,7 +43,7 @@ void APathPoints::OnPlayerEnter(UPrimitiveComponent* OverlapComponent, AActor* O
 		Enemy = Cast<AEnemyAI>(OtherActor);
 		if (Enemy != nullptr)
 		{
-			Enemy->NextPathPoint = NextPathpoint;
+			Enemy->NextPathPoint = NextPathpoint; //enemy moves to next point in the array
 		}
 	}
 }

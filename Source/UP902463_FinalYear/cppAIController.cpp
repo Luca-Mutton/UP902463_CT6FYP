@@ -21,6 +21,7 @@ AcppAIController::AcppAIController()
 	SightConfig->PeripheralVisionAngleDegrees = AIFieldofView;
 	SightConfig->SetMaxAge(AISightMemorylength);
 
+	//enables the A.I. to chase the target, if they are friend, neutral or enemy
 	SightConfig->DetectionByAffiliation.bDetectEnemies = true;
 	SightConfig->DetectionByAffiliation.bDetectFriendlies = true;
 	SightConfig->DetectionByAffiliation.bDetectNeutrals = true;
@@ -56,6 +57,7 @@ void AcppAIController::Tick(float DeltaSeconds)
 
 	AEnemyAI* Enemy = Cast<AEnemyAI>(GetPawn());
 
+	// if the distance to the player is less than the AI's SightRadius, the player cannnot be seen.
 	if (DistanceToPlayer > AISightRadius)
 	{
 		bIsPlayerDetected = false;
@@ -75,6 +77,7 @@ void AcppAIController::Tick(float DeltaSeconds)
 	}
 }
 
+//rotates the actor so it moves more naturally and turn their heads towards the direction of the A.I.
 FRotator AcppAIController::GetControlRotation() const
 {
 	if (GetPawn() == nullptr)
@@ -92,5 +95,6 @@ void AcppAIController::OnPawnDetected(const TArray<AActor*>& DetectedPawns)
 		DistanceToPlayer = GetPawn()->GetDistanceTo(DetectedPawns[i]);
 	}
 
+	//can see the player
 	bIsPlayerDetected = true;
 }

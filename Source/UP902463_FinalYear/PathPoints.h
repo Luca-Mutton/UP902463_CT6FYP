@@ -19,9 +19,13 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 		USceneComponent* Root;
 
+
+	//box component to visualize outline of path point
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 		UBoxComponent* BoxComponent;
 
+
+	//point in path that enemy A.I. moves to
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 		APathPoints* NextPathpoint;
 

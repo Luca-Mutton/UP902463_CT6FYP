@@ -47,5 +47,5 @@ public:
 		bool bIsPlayerDetected = false; //has player been deteceted?
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = AI)
-		float DistanceToPlayer = 0.0f;
+		float DistanceToPlayer = 0.0f; // distance to the player
 };
