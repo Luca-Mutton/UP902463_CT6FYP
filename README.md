@@ -5,6 +5,7 @@ There are two separate levels, one written in C++ and one written in blueprints.
 
 There is an enemy A.I in each level to test the perfromace on to see how impactful it is when there are more instances of the A.I. within the level.
 
+Yellow cubes within C++ levels are exp points that increase the level of the player.
 
 Move the mouse to rotate the camera
 Space bar - Jump
